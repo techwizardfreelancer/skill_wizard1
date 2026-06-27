@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #191b2d 0%, #090b16 40%, #02040b 100%);
+  color: #e5e7eb;
+}
+
+html, body, #root {
+  min-height: 100%;
+  margin: 0;
+  background: radial-gradient(circle at top, #191b2d 0%, #090b16 40%, #02040b 100%);
+}
+
+button, input, textarea, select {
+  font: inherit;
+}
+
+body {
+  color: #e5e7eb;
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.glass-panel {
+  background: rgba(8, 10, 22, 0.86);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(24px);
+}
+
+.glass-button {
+  background: rgba(124, 58, 237, 0.16);
+  color: #f8f7ff;
+  border: 1px solid rgba(124, 58, 237, 0.32);
+}
+
+.glass-button:hover {
+  background: rgba(124, 58, 237, 0.26);
+}
+
+* {
+  box-sizing: border-box;
+}

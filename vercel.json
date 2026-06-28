@@ -9,11 +9,18 @@
       }
     }
   ],
-  "env": {
-    "VITE_API_BASE_URL": "@vite_api_base_url"
-  },
   "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "regions": ["iad1"],
-  "framework": "vite"
+  "framework": "vite",
+  "env": {
+    "VITE_API_BASE_URL": "https://backend-production-a518.up.railway.app/api",
+    "VITE_SOCKET_URL": "https://backend-production-a518.up.railway.app"
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
